@@ -1,3 +1,4 @@
+import { DisplacementTacticalMap } from "@/components/DisplacementTacticalMap";
 import Link from "next/link";
 import { GLOBAL_DISPLACEMENT_FIGURES, FALLBACK_MOVEMENTS, FALLBACK_INCIDENTS } from "@/lib/fallback-data";
 import { CATEGORY_LABELS } from "@/lib/category";
@@ -36,6 +37,8 @@ export default function DriftlineBoardPage() {
       <div className="border-l-4 border-brand bg-brand-soft/40 p-4 rounded-r-md leading-relaxed text-brand-ink">
         <strong>Definitions Strip:</strong> Refugees, asylum-seekers, internally displaced people, and returnees are counted under distinct legal mandates. They are kept strictly partitioned and are never collapsed into an undifferentiated total.
       </div>
+
+      <DisplacementTacticalMap />
 
       {/* Stock Figures (Point-in-Time Census) */}
       <div className="bg-white border border-border rounded-lg p-6 space-y-4">
